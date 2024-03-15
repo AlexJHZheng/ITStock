@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 
 // 导入你的组件
 import LoginVue from "../components/login.vue";
-import MainHome from "../components/main/index.vue";
+import MainHome from "../components/searchProduto/index.vue";
 
 // 使用 VueRouter 插件
 Vue.use(VueRouter);
