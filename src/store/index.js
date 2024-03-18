@@ -8,7 +8,8 @@ export default new Vuex.Store({
   state: {
     // 定义应用的状态
     count: 0,
-    username: "rr",
+    username: "",
+    token: "",
   },
   mutations: {
     // 定义改变状态的同步方法
@@ -17,6 +18,14 @@ export default new Vuex.Store({
     },
     updateUsername(state, username) {
       state.username = username;
+    },
+    //通用的update方法
+    updateState(state, payload) {
+      state[payload.key] = payload.value;
+    },
+    //通用的delete方法
+    deleteState(state, key) {
+      delete state[key];
     },
   },
   actions: {
