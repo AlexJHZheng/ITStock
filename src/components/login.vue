@@ -53,8 +53,8 @@ export default {
   },
   data() {
     return {
-      username: "eberson",
-      password: "itblue390",
+      username: "",
+      password: "",
       errorMessage: "",
     };
   },
