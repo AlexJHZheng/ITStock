@@ -10,7 +10,8 @@ Vue.use(VueRouter);
 
 // 配置路由
 const routes = [
-  { path: "/home", component: MainHome }, // 定义路径为 '/'，对应 Home 组件
+  { path: "/", component: MainHome }, // 默认登录页
+  { path: "/searchProd", component: MainHome }, // 定义路径为 '/'，对应 Home 组件
   { path: "/login", component: LoginVue }, // 定义路径为 '/about'，对应 About 组件
 ];
 
